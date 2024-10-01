@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peach Cobbler Recipe</title>
+    <link rel="stylesheet" href="styles.csss">
+    
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Peach Cobbler Recipe</h1>
+
+        <h2>Topping</h2>
+        <ul>
+            <li>140 g all-purpose flour</li>
+            <li>100 g granulated sugar</li>
+            <li>1 teaspoon baking powder</li>
+            <li> a little bit of salt</li>
+            <li>175 g milk</li>
+            <li>100 g butter, melted</li>
+            <li>2 teaspoons vanilla extract</li>
+        </ul>
+
+        <h2>Peach Filling</h2>
+        <ul>
+            <li>3 yellow peaches</li>
+            <li>a lemon, juiced</li>
+            <li>50 g brown sugar</li>
+            <li>2 tablespoons cornstarch</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>halh teaspoon ground cinnamon</li>
+            <li>half teaspoon ground ginger</li>
+            <li>half teaspoon ground nutmeg</li>
+        </ul>
+    </div>
+
+    
+    
+    <script>
+        const listItems = document.querySelectorAll('li');
+
+        listItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('completed');
+            });
+        });
+    </script>
+
+</body>
+</html>
